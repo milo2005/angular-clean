@@ -1,7 +1,9 @@
-import {Component, OnInit} from "@angular/core";
+import {Component} from "@angular/core";
+import {PeliculaListComponent} from './peliculas/pelicula-list.component';
 
 @Component({
   selector:"my-app",
-  template:"<h1>Titulo</h1>"
+  template:"<my-lista></my-lista>",
+  directives:[PeliculaListComponent]
 })
 export class AppComponent {}
